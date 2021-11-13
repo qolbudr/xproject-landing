@@ -9,11 +9,12 @@
     rel="stylesheet" 
     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="./public/plugins/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="./public/styles/dist/style.css">
 </head>
 <body class="text-white">
   <header class="bg-custom-black fixed top-0 w-full p-4">
-    <div class="container">
+    <div class="container pr-4">
       <button class="block ml-auto text-yellow-500 text-3xl lg:hidden" id="menu__hamburger">
         <i class="fas fa-bars"></i>
       </button>
@@ -32,7 +33,7 @@
       >
         <li><a href="/" class="inline-block">Home</a></li>
         <li><a href="./events.html" class="inline-block my-8 lg:my-0">Events</a></li>
-        <li><a href="#about" class="inline-block">About Us</a></li>
+        <li><a href="#about" class="inline-block smooth-scroll smooth-scroll__nav">About Us</a></li>
       </ul>
 
     </nav>
@@ -50,7 +51,7 @@
           <div class="flex justify-center lg:justify-start items-center lg:items-start mt-8">
             <a 
               href="#explore" 
-              class="border-radius-gradient-dark-purple inline-block px-10 py-2"
+              class="border-radius-gradient-dark-purple rounded inline-block px-10 py-2 smooth-scroll"
             >
               Explore
             </a>
@@ -61,22 +62,225 @@
     <!-- ./Jumbotron -->
 
     <!-- Explore -->
-    <section class="container mt-32" id="explore">
-      <div class="flex flex-col lg:flex-row">
-        <div class="flex flex-col">
-          <h2 class="text-gradient">Apa itu Xproject ?</h2>
-          <P>
+    <section class="container pt-44" id="explore">
+      <div class="flex flex-col lg:flex-row lg:justify-evenly">
+        <div class="flex flex-col lg:w-1/2">
+          <h2 class="font-bold text-center lg:text-justify text-gradient text-3xl lg:text-5xl">Apa itu Xproject ?</h2>
+          <P class="text-center lg:text-justify mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit aliquam vitae nisi varius. Fermentum sem lorem nam viverra proin ut. Sapien arcu pulvinaraliq
             uam nullam facilisi at faucibus. Fames arcu mauris lorem ac.
           </P>
         </div>
 
-        <div class="border-radius-gradient-dark-purple">
-          <img src="./public/images/image.png" alt="image">
+        <div class="hidden lg:inline-block border-radius-gradient-dark-purple rounded-lg ml-20 p-4 w-1/2">
+          <img src="./public/images/image.png" alt="image" class="rounded-lg overflow-hidden">
         </div>
       </div>
     </section>
     <!-- ./Explore -->
+
+    <!-- Events -->
+    <section class="container mt-16 lg:mt-32">
+      <div class="flex justify-center lg:justify-around items-center">
+        <div class="hidden lg:block w-5/12 relative">
+          <hr class="border-gradient-orange-pink">
+          <hr class="border-gradient-orange-pink rotate-90 absolute rotated-hr-left">
+        </div>
+
+        <h1 class="text-custom-black text-gray-stroke text-4xl lg:text-7xl font-bold">Break The Limits</h1>
+      </div>
+
+      <div class="flex flex-col justify-center lg:justify-start lg:ml-32 mt-4">
+        <h2 class="font-bold text-center lg:text-justify text-gradient text-3xl lg:text-5xl mb-8">Events</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1-->
+            <div class="swiper-slide">
+              <div class="flex flex-col">
+                <div class="border-radius-gradient-orange-pink rounded relative p-2 overflow-hidden">
+                  <img src="./public/images/image.png" alt="image" class="rounded mx-auto">
+
+                  <div class="absolute bg-gradient-orange-pink w-1/2 py-1 swiper-image-caption ">
+                    <p class="text-center">IC</p>
+                  </div>
+                </div>
+
+                <p class="text-justify my-4">
+                  Lorem ipsum dolor sit amet,cons
+                  ectetur adipiscing elit. Nuncduiac
+                  porta at sociis egestas ultricesqu
+                  am odio. Interdum viverra soda
+                  les odio aliquam dui. 
+                </p>
+
+                <a 
+                  href="#"
+                  class="border-radius-gradient-orange-pink rounded-lg p-1 w-1/2 md:w-2/6 lg:w-2/5 hover:text-white"
+                >
+                  <span class="bg-gradient-orange-pink block text-center rounded">Read More</span>
+                </a>
+              </div>
+            </div>
+            <!-- ./Slide 1-->
+            
+            <!-- Slide 2-->
+            <div class="swiper-slide">
+              <div class="flex flex-col">
+                <div class="border-radius-gradient-orange-pink rounded relative p-2 overflow-hidden">
+                  <img src="./public/images/image.png" alt="image" class="rounded mx-auto">
+
+                  <div class="absolute bg-gradient-orange-pink w-1/2 py-1 swiper-image-caption ">
+                    <p class="text-center">IBC</p>
+                  </div>
+                </div>
+
+                <p class="text-justify my-4">
+                  Lorem ipsum dolor sit amet,cons
+                  ectetur adipiscing elit. Nuncduiac
+                  porta at sociis egestas ultricesqu
+                  am odio. Interdum viverra soda
+                  les odio aliquam dui. 
+                </p>
+
+                <a 
+                  href="#"
+                  class="border-radius-gradient-orange-pink rounded-lg p-1 w-1/2 md:w-2/6 lg:w-2/5 hover:text-white"
+                >
+                  <span class="bg-gradient-orange-pink block text-center rounded">Read More</span>
+                </a>
+              </div>
+            </div>
+            <!-- ./Slide 2-->
+
+            <!-- Slide 3-->
+            <div class="swiper-slide">
+              <div class="flex flex-col">
+                <div class="border-radius-gradient-orange-pink rounded relative p-2 overflow-hidden">
+                  <img src="./public/images/image.png" alt="image" class="rounded mx-auto">
+
+                  <div class="absolute bg-gradient-orange-pink w-1/2 py-1 swiper-image-caption ">
+                    <p class="text-center">IC</p>
+                  </div>
+                </div>
+
+                <p class="text-justify my-4">
+                  Lorem ipsum dolor sit amet,cons
+                  ectetur adipiscing elit. Nuncduiac
+                  porta at sociis egestas ultricesqu
+                  am odio. Interdum viverra soda
+                  les odio aliquam dui. 
+                </p>
+
+                <a 
+                  href="#"
+                  class="border-radius-gradient-orange-pink rounded-lg p-1 w-1/2 md:w-2/6 lg:w-2/5 hover:text-white"
+                >
+                  <span class="bg-gradient-orange-pink block text-center rounded">Read More</span>
+                </a>
+              </div>
+            </div>
+            <!-- ./Slide 3-->
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Events -->
+
+    <!-- About -->
+    <section class="container pt-16 lg:pt-32" id="about">
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-start">
+        <div class="flex flex-col justify-center lg:justify-start lg:w-1/2">
+          <h2 class="font-bold text-center lg:text-justify text-gradient text-3xl lg:text-5xl mb-6 lg:mt-10">About Us</h2>
+
+          <P class="text-center lg:text-justify mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit aliquam vitae nisi varius. Fermentum sem lorem nam viverra proin ut. Sapien arcu pulvinaraliq
+            uam nullam facilisi at faucibus. Fames arcu mauris lorem ac.
+          </P>
+        </div>
+
+        <h1 class="block lg:flex lg:flex-col lg:justify-start text-center lg:text-left text-custom-black text-gray-stroke text-4xl lg:text-7xl font-bold lg:ml-40 mx-auto lg:mx-0 mt-10 lg:mt-0">
+          <span>One</span>
+          <span>Step</span>
+          <span>Forward</span>
+        </h1>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-10 lg:mt-16">
+        <img src="./public/images/image.png" alt="image">
+        <img src="./public/images/image.png" alt="image">
+        <img src="./public/images/image.png" alt="image">
+        <img src="./public/images/image.png" alt="image">
+        <img src="./public/images/image.png" alt="image">
+        <img src="./public/images/image.png" alt="image">
+      </div>
+    </section>
+    <!-- ./About -->
+
+    <!-- Channel -->
+    <section class="container mt-16 lg:mt-32">
+      <div class="flex text-center lg:justify-between lg:items-center lg:text-left">
+        <h1 class="text-custom-black text-gray-stroke text-4xl lg:text-7xl font-bold lg:w-1/2 lg:mr-6">
+          What You Never
+          See Before
+        </h1>
+
+        <hr class="hidden lg:block border-gradient-dark-purple w-1/2">
+      </div>
+
+      <div class="flex flex-col lg:flex-row lg:items-center mt-10 lg:mt-16">
+
+        <div class="lg:w-1/2">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JdSpuTi9d8A?controls=0" frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <h1 
+          class="text-custom-black text-gradient-stroke-dark-purple text-4xl lg:text-8xl font-bold mt-8 lg:mt-0 lg:ml-16 flex flex-col"
+        >
+            <span>Our</span> 
+            Channel
+        </h1>
+      </div>
+
+      <div class="flex">
+        <p class="text-justify lg:text-left lg:w-1/2 mt-4 lg:mt-16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing 
+          elit. Risus volutpat aenean ac et pretium non tristiq
+          ue lectus turpis. Suspendisse venenatis ac et poten
+          ti egestas. Pellentesque eleifend ipsum, fames cong
+          ue. Mauris porta at id egestas est nullam.
+        </p>
+      </div>
+    </section>
+    <!-- ./Channel -->
+
+    <!-- Media Partner -->
+    <section class="container my-16 lg:my-32">
+      <div class="flex lg:flex-col lg:min-h-300px lg:mb-60">
+        <div class="hidden lg:block relative">
+          <hr class="border-gradient-orange-pink w-3/4 ml-auto">
+          <hr class="border-gradient-orange-pink rotate-90 absolute rotated-hr-right">
+        </div>
+
+        <div class="border-radius-gradient-orange-pink rounded p-8 relative w-full lg:w-5/6 lg:mt-24">
+          <div class="border-radius-gradient-orange-pink rounded p-1 w-150px absolute media-partner__header">
+            <h2 class="block bg-gradient-orange-pink rounded text-center p-2">Media Partner</h2>
+          </div>
+
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4 items-center">
+            <img src="./public/images/media_partner.png" alt="partner" class="w-full">
+            <img src="./public/images/media_partner.png" alt="partner" class="w-full">
+            <img src="./public/images/media_partner.png" alt="partner" class="w-full">
+            <img src="./public/images/media_partner.png" alt="partner" class="w-full">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Media Partner -->
   </main>
 
   <footer class="py-8">
@@ -114,6 +318,23 @@
     <h5 class="block font-light text-center text-xs mt-10">XProject 2021 • All Rights reserved  • HIMTI Unesa</h5>
   </footer>
 
+  <script src="./public/plugins/swiper/swiper-bundle.min.js"></script>
   <script src="./public/scripts/navbar.js"></script>
+  <script src="./public/scripts/smoothScroll.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween: 16,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>
