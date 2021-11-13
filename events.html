@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XProject</title>
+  <link 
+    rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./public/styles/dist/style.css">
+</head>
+<body class="text-white">
+  <header class="bg-custom-black fixed top-0 w-full p-4">
+    <div class="container pr-4">
+      <button class="block ml-auto text-yellow-500 text-3xl lg:hidden" id="menu__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <nav 
+      class="mx-auto font-light fixed lg:static inset-0 w-full h-full bg-custom-black-phone-tablet hidden lg:block animate-slide-from-top lg:animate-none"
+    >
+
+      <button class="block ml-auto mr-8 mt-8 hover:text-yellow-500 text-4xl relative inset-0 lg:hidden" id="menu__close">
+        <i class="fas fa-times-circle"></i>
+      </button>
+
+      <ul 
+        class="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center text-xl lg:text-2xl w-full h-3/4"
+      >
+        <li><a href="/" class="inline-block">Home</a></li>
+        <li><a href="./events.html" class="inline-block my-8 lg:my-0">Events</a></li>
+        <li><a href="./#about" class="inline-block">About Us</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="mt-16 py-4">
+    <!-- Jumbotron -->
+    <section class="container mt-32">
+      <div class="flex justify-center lg:justify-start items-center lg:items-start">
+        <img src="./public/images/logo.png" alt="logo" class="hidden lg:block">
+
+        <div class="flex flex-col lg:ml-8">
+          <h1 class="text-4xl lg:text-6xl font-bold uppercase flex flex-col justify-center lg:justify-start items-center lg:items-start">
+            <span class="text-gradient">Ceremony</span> 
+            <span class="text-custom-black text-gradient-stroke">Of Informatics</span>
+          </h1>
+
+          <div class="flex justify-center lg:justify-start items-center lg:items-start mt-8">
+            <a 
+              href="#explore" 
+              class="border-radius-gradient-dark-purple rounded inline-block px-10 py-2 smooth-scroll"
+            >
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Jumbotron -->
+
+    <!-- Explore -->
+    <section class="container pt-16 lg:pt-32 mt-60 lg:mt-0" id="explore">
+      <div class="flex justify-center lg:justify-start items-center">
+        <div class="hidden lg:block w-5/12 relative">
+          <hr class="border-gradient-orange-pink">
+          <hr class="border-gradient-orange-pink rotate-90 absolute rotated-hr-left">
+        </div>
+
+        <h1 class="text-custom-black text-gray-stroke text-4xl lg:text-7xl font-bold lg:ml-16">What is it ?</h1>
+      </div>
+
+      <div class="flex flex-col justify-center lg:justify-start lg:ml-56 mt-24 lg:w-1/2">
+        <h2 class="flex flex-col font-bold text-center lg:text-justify text-gradient text-3xl lg:text-5xl mb-8">
+          <span>Ceremony</span>
+          of Informatics
+        </h2>
+
+        <p class="text-center lg:text-left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Donec vehicula fermentum faucibus nascetur. 
+          Tristique blandit eu dui nisl. Elementum aliquam dig
+          nissim bibendum tincidunt faucibus convallis mau
+          ris. Aliquam accumsan adipiscing orci lacus lorem leo.
+        </p>
+      </div>
+    </section>
+    <!-- ./Explore -->
+
+    <!-- Channel -->
+    <section class="container mt-16 lg:mt-60">
+      <div class="flex justify-center lg:justify-between items-center">
+        <h1 class="text-custom-black text-gray-stroke text-4xl lg:text-7xl font-bold lg:ml-16 flex flex-col items-center lg:items-start">
+          <span>See Ceremony</span>
+          <span>Live Here</span>
+        </h1>
+
+        <div class="hidden lg:block w-5/12 relative">
+          <hr class="border-gradient-orange-pink">
+          <hr class="border-gradient-orange-pink rotate-90 absolute rotated-hr-right">
+        </div>
+      </div>
+
+      <div class="flex justify-center align-center">
+        <div class="w-full lg:w-1/2 mt-16">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JdSpuTi9d8A?controls=0" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Channel -->
+
+    <!-- About -->
+    <section class="container my-16 lg:my-32">
+      <div class="flex text-center lg:text-left justify-center lg:justify-between lg:items-center">
+        <hr class="hidden lg:block border-gradient-dark-purple w-1/2">
+
+        <h1 class="text-custom-black text-gray-stroke text-4xl lg:text-7xl font-bold lg:w-1/2 lg:ml-6">
+          This is Us
+        </h1>
+      </div>
+
+      <div class="flex flex-col">
+        <h2 class="font-bold text-center lg:text-justify text-gradient text-3xl lg:text-5xl mb-6 mt-12 lg:mt-10">Our Gallery</h2>
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          <img src="./public/images/image.png" alt="image" class="w-full">
+          <img src="./public/images/image.png" alt="image" class="w-full">
+          <img src="./public/images/image.png" alt="image" class="w-full">
+          <img src="./public/images/image.png" alt="image" class="w-full">
+          <img src="./public/images/image.png" alt="image" class="w-full">
+          <img src="./public/images/image.png" alt="image" class="w-full">
+        </div>
+      </div>
+    </section>
+    <!-- ./About -->
+  </main>
+
+  <footer class="py-8">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-7">
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Xproject 2021</h4>
+        <p class="text-sm my-2 md:my-4">Presented by:</p>
+        <img src="./public/images/himti_unesa.png" alt="HIMTI UNESA" id="footer__logo">
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Competition</h4>
+        <a href="./web-design.html" class="text-sm mt-2 md:mt-4">Web Design</a>
+        <a href="./esport.html" class="text-sm mt-2">Esport</a>
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Social Media</h4>
+        <a href="./web-design.html" class="text-sm mt-2 md:mt-4 flex items-center">
+          <span class="fab fa-youtube text-xl mr-2"></span> xproject
+        </a>
+        <a href="./esport.html" class="text-sm mt-2 flex items-center">
+          <span class="fab fa-instagram text-xl mr-3"></span> xproject
+        </a>
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Getting Touch</h4>
+        <a href="mailto:xproject@unesa.ac.id" class="text-sm mt-2 md:mt-4">xproject@unesa.ac.id</a>
+      </div>
+     
+    </div>
+
+    <h5 class="block font-light text-center text-xs mt-10">XProject 2021 • All Rights reserved  • HIMTI Unesa</h5>
+  </footer>
+
+  <script src="./public/scripts/navbar.js"></script>
+  <script src="./public/scripts/smoothScroll.js"></script>
+</body>
+</html>
