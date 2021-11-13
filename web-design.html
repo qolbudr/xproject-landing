@@ -13,7 +13,7 @@
 </head>
 <body class="text-white">
   <header class="bg-custom-black fixed top-0 w-full p-4">
-    <div class="container">
+    <div class="container pr-4">
       <button class="block ml-auto text-yellow-500 text-3xl lg:hidden" id="menu__hamburger">
         <i class="fas fa-bars"></i>
       </button>
@@ -28,11 +28,11 @@
       </button>
 
       <ul 
-        class="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center text-lg lg:text-xl w-full h-3/4"
+        class="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center text-xl lg:text-2xl w-full h-3/4"
       >
         <li><a href="/" class="inline-block">Home</a></li>
         <li><a href="./events.html" class="inline-block my-8 lg:my-0">Events</a></li>
-        <li><a href="#about" class="inline-block">About Us</a></li>
+        <li><a href="./#about" class="inline-block">About Us</a></li>
       </ul>
 
     </nav>
@@ -58,7 +58,7 @@
       </div>
     </section>
 
-    <section class="container mt-32">
+    <section class="container pt-32" id="explore">
       <div class="flex justify-center">
         <div class="lg:w-3/5">
           <div class="flex justify-center">
@@ -373,5 +373,6 @@
   </footer>
 
   <script src="./public/scripts/navbar.js"></script>
+  <script src="./public/scripts/smoothScroll.js"></script>
 </body>
 </html>
