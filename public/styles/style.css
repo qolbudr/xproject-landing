@@ -100,10 +100,32 @@ hr.rotated-hr-right {
   border-image-source: var(--dark-purple-gradient);
 }
 
+.border-gradient-orange-pink {
+  @apply border-solid border-2;
+  border-image-slice: 1;
+  border-image-source: var(--orange-pink-gradient);
+}
+
+.border-rounded-gradient-orange-pink {
+  @apply rounded-full;
+  background: 
+     linear-gradient(var(--custom-black), var(--custom-black)) padding-box,
+     var(--orange-pink-gradient);
+  border: 2px solid transparent;
+}
+
 .border-radius-gradient-dark-purple {
   background: 
      linear-gradient(var(--custom-black), var(--custom-black)) padding-box,
      var(--dark-purple-gradient);
+  border: 2px solid transparent;
+}
+
+.border-radius-gradient-orange-pink {
+  @apply rounded;
+  background: 
+     linear-gradient(var(--custom-black), var(--custom-black)) padding-box,
+     var(--orange-pink-gradient);
   border: 2px solid transparent;
 }
 
@@ -135,6 +157,12 @@ hr.rotated-hr-right {
   -webkit-text-stroke: 2px transparent;
 }
 
+.text-white-stroke {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+}
+
 /* Swipper custom */
 .swiper {
   max-width: 100%;
@@ -155,6 +183,10 @@ hr.rotated-hr-right {
 .media-partner__header {
   top: -1.7rem; 
   left: 2rem;
+}
+
+.centered-timeline {
+  left:calc(50% - 0.10rem);
 }
 
 /* Tablet */
