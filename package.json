@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "tailwindcss -c ./tailwind.config.js -i ./public/styles/style.css -o ./public/styles/dist/style.css --watch",
     "prod": "cross-env NODE_ENV=production tailwindcss -c ./tailwind.config.js -i ./public/styles/style.css -o ./styles/dist/style.css",
-    "start": "http-server ./"
+    "start": "http-server ./",
+    "graph": "git log --all --oneline --text --decorate --graph"
   },
   "repository": {
     "type": "git",
