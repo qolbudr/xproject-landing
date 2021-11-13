@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XProject</title>
+  <link 
+    rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./public/styles/dist/style.css">
+</head>
+<body class="text-white">
+  <header class="bg-custom-black fixed top-0 w-full p-4">
+    <div class="container">
+      <button class="block ml-auto text-yellow-500 text-3xl lg:hidden" id="menu__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <nav 
+      class="mx-auto font-light fixed lg:static inset-0 w-full h-full bg-custom-black-phone-tablet hidden lg:block animate-slide-from-top lg:animate-none"
+    >
+
+      <button class="block ml-auto mr-8 mt-8 hover:text-yellow-500 text-4xl relative inset-0 lg:hidden" id="menu__close">
+        <i class="fas fa-times-circle"></i>
+      </button>
+
+      <ul 
+        class="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center text-lg lg:text-xl w-full h-3/4"
+      >
+        <li><a href="/" class="inline-block">Home</a></li>
+        <li><a href="./events.html" class="inline-block my-8 lg:my-0">Events</a></li>
+        <li><a href="#about" class="inline-block">About Us</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="mt-16 py-4">
+    <section class="container mt-32">
+      <div class="flex justify-center lg:justify-start items-center lg:items-start">
+        <img src="./public/images/logo.png" alt="logo" class="hidden lg:block lg:w-2/5">
+
+        <div class="flex flex-col lg:ml-16">
+          <h1 class="text-6xl lg:text-7xl font-bold uppercase flex flex-col justify-center lg:justify-start items-center lg:items-start"><span class="text-gradient lg:mt-7">Web</span> <span class="text-custom-black text-gradient-stroke lg:mt-8">Design</span></h1>
+
+          <div class="flex justify-center lg:justify-start items-center lg:items-start mt-12">
+            <a 
+              href="#explore" 
+              class="border-radius-gradient-dark-purple inline-block px-10 py-2 smooth-scroll"
+            >
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-32">
+      <div class="flex justify-center">
+        <div class="lg:w-3/5">
+          <div class="flex justify-center">
+            <div class="border-radius-gradient-dark-purple w-full text-center py-3 lg:py-6">
+              <h1 class="text-lg lg:text-3xl font-bold uppercase"><span class="text-gradient">Web Design Competition</span></h1>
+            </div>
+          </div>
+          <div class="text-center break-all lg:break-normal mt-16">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies molestie nunc vel sem lobortis tincidunt consequat. Et mauris tellusnon sed erat. Velit vulputate tincidunt at risus, nec sed. Tellus a, mauris, ullamcorper ac.
+          </div>
+          <div class="container grid grid-cols-1 items-center lg:grid-cols-2 mt-16 gap:20">
+            <div class="flex flex-col text-center mx-2">
+              <div class="p-1 border-radius-gradient-orange-pink">
+                <a href="#explore" class="inline-block px-10 py-2">
+                  Guide Book
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col text-center mx-2 mt-3 lg:mt-0">
+              <div class="p-1 border-radius-gradient-orange-pink">
+                <a href="#explore" class="bg-gradient-orange-pink inline-block w-full px-10 py-2 hover:text-white">
+                  Register
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden lg:block bg-gradient-orange-pink w-1 h-96 -mt-48 ml-10"></div>
+    </section>
+
+    <section class="container mt-8 lg:-mt-20 lg:mb-32">
+      <div class="flex justify-center lg:justify-start lg:items-center">
+        <div class="hidden lg:block bg-gradient-orange-pink w-80 h-1"></div>
+        <h1 class="text-4xl lg:text-6xl text-custom-black font-bold text-white-stroke lg:ml-5">Come Join Us</h1>
+      </div>
+      <div class="flex justify-center mt-8 lg:mt-16">
+        <h1 class="text-3xl text-gradient font-bold">Timeline</h1>
+      </div>
+      <div class="hidden lg:block">
+        <div class="grid grid-cols-6 mt-24 gap-10">
+          <div class="flex flex-col text-center">
+            <h1 class="text-lg font-bold">Pendaftaran</h1>
+            <p class="text-xs font-light">20 November 2021</p>
+          </div>
+          <div class="flex flex-col"></div>
+          <div class="flex flex-col text-center">
+            <h1 class="text-lg font-bold">Penyisihan</h1>
+            <p class="text-xs font-light">27 November 2021</p>
+          </div>
+          <div class="flex flex-col"></div>
+          <div class="flex flex-col text-center">
+            <h1 class="text-lg font-bold">Final</h1>
+            <p class="text-xs font-light">29 November 2021</p>
+          </div>
+          <div class="flex flex-col"></div>
+        </div>
+        <div class="grid grid-cols-5 my-10 px-16">
+          <div class="flex flex-col border-t-4 border-gradient-orange-pink"></div>
+          <div class="flex flex-col border-t-4"></div>
+          <div class="flex flex-col border-t-4"></div>
+          <div class="flex flex-col border-t-4"></div>
+          <div class="flex flex-col border-t-4"></div>
+        </div>
+        <div class="flex justify-between items-center -mt-14 px-12">
+          <div class="flex flex-col">
+            <div class="border-rounded-gradient-orange-pink p-1">
+              <div class="rounded-full bg-gradient-orange-pink w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-6 mt-10 gap-10">
+          <div class="flex flex-col text-center"></div>
+          <div class="flex flex-col text-center break-normal">
+            <h1 class="text-lg font-bold">Technical Meeting</h1>
+            <p class="text-xs font-light">25 November 2021</p>
+          </div>
+          <div class="flex flex-col"></div>
+          <div class="flex flex-col text-center">
+            <h1 class="text-lg font-bold">Pengumuman Finalis</h1>
+            <p class="text-xs font-light">28 November 2021</p>
+          </div>
+          <div class="flex flex-col"></div>
+          <div class="flex flex-col text-center">
+            <h1 class="text-lg font-bold">Awarding Night</h1>
+            <p class="text-xs font-light">30 November 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block mt-10 lg:hidden">
+        <div class="flex items-start justify-between h-full relative">
+          <div class="absolute top-0 bottom-0 w-1 bg-gradient-orange-pink centered-timeline"></div>
+          <div class="w-full pb-10 text-right">
+            <h1 class="text-lg font-bold">Pendaftaran</h1>
+            <p class="text-xs font-light">20 November 2021</p>
+          </div>
+          <div class="w-full flex justify-center z-10">
+            <div class="border-rounded-gradient-orange-pink p-1">
+              <div class="rounded-full bg-gradient-orange-pink w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="w-full h-2"></div>
+        </div>
+        <div class="flex items-start justify-between h-full relative">
+          <div class="absolute top-0 bottom-0 w-1 bg-white centered-timeline"></div>
+          <div class="w-full h-2"></div>
+          <div class="w-full flex justify-center z-10">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="w-full pb-10">
+            <h1 class="text-lg font-bold">Technical Meeting</h1>
+            <p class="text-xs font-light">25 November 2021</p>
+          </div>
+        </div>
+        <div class="flex items-start justify-between h-full relative">
+          <div class="absolute top-0 bottom-0 w-1 bg-white centered-timeline"></div>
+          <div class="w-full pb-10 text-right">
+            <h1 class="text-lg font-bold">Penyisihan</h1>
+            <p class="text-xs font-light">27 November 2021</p>
+          </div>
+          <div class="w-full flex justify-center z-10">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="w-full h-2"></div>
+        </div>
+        <div class="flex items-start justify-between h-full relative">
+          <div class="absolute top-0 bottom-0 w-1 bg-white centered-timeline"></div>
+          <div class="w-full h-2"></div>
+          <div class="w-full flex justify-center z-10">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="w-full pb-10 break-all">
+            <h1 class="text-lg font-bold">Pengumuman Finalis</h1>
+            <p class="text-xs font-light">28 November 2021</p>
+          </div>
+        </div>
+        <div class="flex items-start justify-between h-full relative">
+          <div class="absolute top-0 bottom-0 w-1 bg-white centered-timeline"></div>
+          <div class="w-full pb-10 text-right">
+            <h1 class="text-lg font-bold">Final</h1>
+            <p class="text-xs font-light">29 November 2021</p>
+          </div>
+          <div class="w-full flex justify-center z-10">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="w-full h-2"></div>
+        </div>
+        <div class="flex items-start justify-between h-full relative">
+          <div class="w-full h-2"></div>
+          <div class="w-full flex justify-center z-10">
+            <div class="border-white border-2 rounded-full p-1">
+              <div class="rounded-full bg-white w-4 h-4"></div>
+            </div>
+          </div>
+          <div class="w-full pb-10 break-all">
+            <h1 class="text-lg font-bold">Awarding</h1>
+            <p class="text-xs font-light">30 November 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-8 lg:mt-20 lg:mb-32">
+      <div class="w-full flex justify-center lg:justify-end lg:items-center">
+        <h1 class="text-4xl lg:text-6xl text-custom-black font-bold text-white-stroke lg:w-3/5">The Champion</h1>
+        <div class="hidden lg:block bg-gradient-orange-pink w-full h-1"></div>
+      </div>
+      <div class="w-full text-center lg:text-left mt-5">
+        <h1 class="text-3xl text-gradient font-bold">Prizes</h1>
+      </div>
+      <div class="w-full flex justify-end mt-0 lg:-mt-36">
+        <div class="hidden lg:block bg-gradient-orange-pink w-1 h-96 mr-10"></div>
+      </div>
+      <div class="w-full grid lg:flex gap-10 items-center justify-between mt-8 lg:-mt-32 lg:pl-20 lg:pr-36">
+        <div class="flex flex-col w-full lg:w-3/4 border-radius-gradient-orange-pink lg:border-radius-gradient-dark-purple py-1 lg:py-5">
+          <div class="justify-center w-full text-center">
+            <div class="grid grid-cols-2 lg:block lg:grid-cols-none items-center">
+              <img class="hidden lg:block" src="./public/images/bronze-prize.png">
+              <img class="block lg:hidden" src="./public/images/gold-prize.png">
+              <div class="w-full">
+                <h1 class="block lg:hidden text-xl text-custom-black font-bold text-white-stroke">1st Winner</h1>
+                <h1 class="hidden lg:block text-xl text-custom-black font-bold text-white-stroke">3rd Winner</h1>
+                <p class="hidden lg:block text-normal">Rp. 2.000.000</p>
+                <p class="block lg:hidden text-normal">Rp. 5.000.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-full border-radius-gradient-dark-purple lg:border-radius-gradient-orange-pink py-1 lg:py-5">
+          <div class="justify-center w-full text-center">
+            <div class="grid grid-cols-2 lg:block lg:grid-cols-none items-center">
+              <img class="hidden lg:block" src="./public/images/gold-prize.png">
+              <img class="block lg:hidden" src="./public/images/silver-prize.png">
+              <div class="w-full">
+                <h1 class="block lg:hidden text-xl text-custom-black font-bold text-white-stroke">2nd Winner</h1>
+                <h1 class="hidden lg:block text-xl text-custom-black font-bold text-white-stroke">1st Winner</h1>
+                <p class="hidden lg:block text-normal">Rp. 5.000.000</p>
+                <p class="block lg:hidden text-normal">Rp. 3.500.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-full lg:w-3/4 border-radius-gradient-dark-purple py-1 lg:py-5">
+          <div class="justify-center w-full text-center">
+            <div class="grid grid-cols-2 lg:block lg:grid-cols-none items-center">
+              <img class="hidden lg:block" src="./public/images/silver-prize.png">
+              <img class="block lg:hidden" src="./public/images/bronze-prize.png">
+              <div class="w-full">
+                <h1 class="block lg:hidden text-xl text-custom-black font-bold text-white-stroke">3rd Winner</h1>
+                <h1 class="hidden lg:block text-xl text-custom-black font-bold text-white-stroke">2nd Winner</h1>
+                <p class="hidden lg:block text-normal">Rp. 3.500.000</p>
+                <p class="block lg:hidden text-normal">Rp. 2.000.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-16 lg:mt-20 mb-32">
+      <div class="flex justify-center lg:justify-start lg:items-center">
+        <div class="hidden lg:block bg-gradient-orange-pink w-96 h-1"></div>
+        <h1 class="text-4xl lg:text-6xl text-custom-black font-bold text-white-stroke lg:ml-5">More Info</h1>
+      </div>
+      <div class="hidden lg:flex justify-start">
+        <div class="hidden lg:block bg-gradient-orange-pink w-1 h-96 -mt-20 ml-10"></div>
+      </div>
+      <div class="flex justify-center mt-10 lg:-mt-56">
+        <div class="container text-center">
+          <h1 class="text-xl lg:text-4xl font-bold">Contact Person</h1>
+          <h1 class="text-lg lg:text-2xl mt-4">Prima Lukito</h1>
+          <div class="flex justify-center items-center mt-5">
+            <i class="fab fa-whatsapp text-white text-3xl"></i>
+            <h1 class="text-white ml-3">+62 821 3333 4444</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="rounded-full bg-gradient-orange-pink h-20 w-20 fixed bottom-10 right-10 z-10 flex justify-center items-center">
+    <a href="https://wa.me/+6282133334444"><i class="fab fa-whatsapp text-3xl"></i></a>
+  </div>
+
+  <footer class="py-8">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-7">
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Xproject 2021</h4>
+        <p class="text-sm my-2 md:my-4">Presented by:</p>
+        <img src="./public/images/himti_unesa.png" alt="HIMTI UNESA" id="footer__logo">
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Competition</h4>
+        <a href="./web-design.html" class="text-sm mt-2 md:mt-4">Web Design</a>
+        <a href="./esport.html" class="text-sm mt-2">Esport</a>
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Social Media</h4>
+        <a href="./web-design.html" class="text-sm mt-2 md:mt-4 flex items-center">
+          <span class="fab fa-youtube text-xl mr-2"></span> xproject
+        </a>
+        <a href="./esport.html" class="text-sm mt-2 flex items-center">
+          <span class="fab fa-instagram text-xl mr-3"></span> xproject
+        </a>
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Getting Touch</h4>
+        <a href="mailto:xproject@unesa.ac.id" class="text-sm mt-2 md:mt-4">xproject@unesa.ac.id</a>
+      </div>
+     
+    </div>
+
+    <h5 class="block font-light text-center text-xs mt-10">XProject 2021 • All Rights reserved  • HIMTI Unesa</h5>
+  </footer>
+
+  <script src="./public/scripts/navbar.js"></script>
+</body>
+</html>
