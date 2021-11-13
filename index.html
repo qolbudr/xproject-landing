@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XProject</title>
+  <link 
+    rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./public/styles/dist/style.css">
+</head>
+<body class="text-white">
+  <header class="bg-custom-black fixed top-0 w-full p-4">
+    <div class="container">
+      <button class="block ml-auto text-yellow-500 text-3xl lg:hidden" id="menu__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <nav 
+      class="mx-auto font-light fixed lg:static inset-0 w-full h-full bg-custom-black-phone-tablet hidden lg:block animate-slide-from-top lg:animate-none"
+    >
+
+      <button class="block ml-auto mr-8 mt-8 hover:text-yellow-500 text-4xl relative inset-0 lg:hidden" id="menu__close">
+        <i class="fas fa-times-circle"></i>
+      </button>
+
+      <ul 
+        class="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center text-xl lg:text-2xl w-full h-3/4"
+      >
+        <li><a href="/" class="inline-block">Home</a></li>
+        <li><a href="./events.html" class="inline-block my-8 lg:my-0">Events</a></li>
+        <li><a href="#about" class="inline-block">About Us</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="mt-16 py-4">
+    <!-- Jumbotron -->
+    <section class="container mt-32">
+      <div class="flex justify-center lg:justify-start items-center lg:items-start">
+        <img src="./public/images/logo.png" alt="logo" class="hidden lg:block">
+
+        <div class="flex flex-col lg:ml-8">
+          <h1 class="text-6xl lg:text-7xl font-bold uppercase flex flex-col justify-center lg:justify-start items-center lg:items-start"><span class="text-gradient">XProject</span> <span class="text-custom-black text-gradient-stroke">2021</span></h1>
+
+          <div class="flex justify-center lg:justify-start items-center lg:items-start mt-8">
+            <a 
+              href="#explore" 
+              class="border-radius-gradient-dark-purple rounded inline-block px-10 py-2"
+            >
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Jumbotron -->
+
+  </main>
+
+  <footer class="py-8">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-7">
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">XProject 2021</h4>
+        <p class="text-sm my-2 md:my-4">Presented by:</p>
+        <img src="./public/images/himti_unesa.png" alt="HIMTI UNESA" id="footer__logo">
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Competition</h4>
+        <a href="./web-design.html" class="text-sm mt-2 md:mt-4">Web Design</a>
+        <a href="./esport.html" class="text-sm mt-2">Esport</a>
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Social Media</h4>
+        <a href="./web-design.html" class="text-sm mt-2 md:mt-4 flex items-center">
+          <span class="fab fa-youtube text-xl mr-2"></span> xproject
+        </a>
+        <a href="./esport.html" class="text-sm mt-2 flex items-center">
+          <span class="fab fa-instagram text-xl mr-3"></span> xproject
+        </a>
+      </div>
+
+      <div class="flex flex-col justify-center md:justify-start items-center md:items-start">
+        <h4 class="font-bold text-2xl">Getting Touch</h4>
+        <a href="mailto:xproject@unesa.ac.id" class="text-sm mt-2 md:mt-4">xproject@unesa.ac.id</a>
+      </div>
+     
+    </div>
+
+    <h5 class="block font-light text-center text-xs mt-10">XProject 2021 • All Rights reserved  • HIMTI Unesa</h5>
+  </footer>
+
+  <script src="./public/scripts/navbar.js"></script>
+</body>
+</html>

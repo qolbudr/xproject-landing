@@ -1,0 +1,32 @@
+{
+  "name": "xproject-2021",
+  "version": "1.0.0",
+  "description": "XProject Landing Page for 2021",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -c ./tailwind.config.js -i ./public/styles/style.css -o ./public/styles/dist/style.css --watch",
+    "prod": "cross-env NODE_ENV=production tailwindcss -c ./tailwind.config.js -i ./public/styles/style.css -o ./styles/dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qolbudr/xproject-landing.git"
+  },
+  "keywords": [
+    "xproject",
+    "tailwind",
+    "landing",
+    "page"
+  ],
+  "author": "Yusril A. P.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qolbudr/xproject-landing/issues"
+  },
+  "homepage": "https://github.com/qolbudr/xproject-landing#readme",
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

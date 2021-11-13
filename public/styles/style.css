@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange-pink-gradient: linear-gradient(110.23deg, #74138D -15.93%, #F08519 55.87%, #F9E002 147%);
+  --dark-purple-gradient: linear-gradient(112.58deg, #74138D -3.1%, #4E4892 52.65%, #4E4892 110.05%);
+  --custom-black: #1b1b1a;
+}
+
+body {
+  background-color: var(--custom-black);
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  background: var(--dark-purple-gradient);
+}
+
+#footer__logo {
+  width: 84px;
+}
+
+a:hover {
+  @apply hover:text-yellow-500;
+}
+
+.bg-custom-black,
+.bg-custom-black-phone-tablet {
+  background-color: var(--custom-black);
+}
+
+.border-gradient-dark-purple {
+  @apply border-solid border-2;
+  border-image-slice: 1;
+  border-image-source: var(--dark-purple-gradient);
+  
+}
+
+.border-radius-gradient-dark-purple {
+  background: 
+     linear-gradient(var(--custom-black), var(--custom-black)) padding-box,
+     var(--dark-purple-gradient);
+  border: 2px solid transparent;
+}
+
+.text-custom-black {
+  color: var(--custom-black);
+}
+
+.text-gradient {
+  background: var(--orange-pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-stroke {
+  background: var(--orange-pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  #footer__logo {
+    width: 62px;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+  .bg-custom-black-phone-tablet {
+    background-color: transparent;
+  }
+}
